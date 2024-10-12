@@ -22,3 +22,22 @@ The project’s architecture is modeled using PlantUML, and the corresponding ar
 	•	main.py: Runs the entire ACC system.
 	•	pid_controller.py: Implements the PID controller logic for speed adjustments.
 	•	basic_acc_architecture.puml / BasicACCArchitecture.png: Contains the UML diagram of the system’s architecture.
+
+
+Usage
+
+1- Clone the repository
+
+git clone https://github.com/HamzaELHANBALI/basic_acc
+
+2- Navigate to the project directory
+
+cd basic_acc
+
+3- Install the required Python dependencies 
+
+pip install -r requirements.txt
+
+4- Run the main Python file
+
+python main.py
