@@ -1,0 +1,38 @@
+@startuml BasicACCArchitecture
+
+title Basic ACC Architecture
+skinparam linetype ortho
+
+rectangle "Driver" as driver {
+    [Set Target Speed]
+}
+
+rectangle "CruiseControl" as cc {
+    [PID Controller]
+}
+
+rectangle "Car" as car {
+    [Throttle Control]
+    [Speed Sensor]
+}
+
+rectangle "Dashboard" as dash {
+    [Speed Display]
+}
+
+driver --> cc : Target Speed
+cc --> car : Throttle Command
+car --> cc : Current Speed
+car --> dash : Speed Data
+
+note right of cc
+    PID Controller adjusts throttle
+    based on speed error
+end note
+
+note bottom of car
+    Speed Sensor provides
+    feedback to CruiseControl
+end note
+
+@enduml
