@@ -10326,3 +10326,4 @@ basic_acc/share/jupyter/nbconvert/templates/script/script.j2
 basic_acc/share/jupyter/nbconvert/templates/webpdf/conf.json
 basic_acc/share/jupyter/nbconvert/templates/webpdf/index.pdf.j2
 basic_acc/share/man/man1/ipython.1
+__pycache__/functional_ut.cpython-311-pytest-7.4.0.pyc
